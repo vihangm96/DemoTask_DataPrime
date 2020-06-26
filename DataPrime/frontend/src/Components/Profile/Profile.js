@@ -119,15 +119,39 @@ class Profile extends React.Component{
             </Row>
 
             <Row className="otherRow">
-                <TechnicalSkills />
+                <TechnicalSkills 
+                            languages = {this.state.languages}
+                            applications = {this.state.applications}
+                            methods = {this.state.methods}
+                            
+                />
             </Row>
             
             <Row className="otherRow">
-                <BusinessExperience />
+                <BusinessExperience 
+                            delivery = {this.state.delivery}
+                            impact = {this.state.impact}
+                            communication = {this.state.communication}
+                            
+                />
             </Row>
             
             <Row className="otherRow">
-                <Preferences />            
+                <Preferences 
+                            oppType = {this.state.oppType}
+                            targetAnnualSalary  = {this.state.targetAnnualSalary}
+                            targetHourlyRate  = {this.state.targetHourlyRate}
+                            relocation  = {this.state.relocation}
+                            travel  = {this.state.travel}
+                            mostImportant  = {this.state.mostImportant}
+                            seniority  = {this.state.seniority}
+                            idealLocation  = {this.state.idealLocation}
+                            govtJobs  = {this.state.govtJobs}
+                            industries  = {this.state.industries}
+                            dataCulture  = {this.state.dataCulture}
+                            prefCompanySize  = {this.state.prefCompanySize}
+                            
+                />            
             </Row>
 
         </Container>
@@ -138,7 +162,3 @@ class Profile extends React.Component{
 }
 
 export default Profile
-
-                    {/* 
-                    <BusinessExperience />
-                     */}
